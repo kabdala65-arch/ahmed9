@@ -1,0 +1,84 @@
+.dates-section {
+  padding: 100px 2rem;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+
+.dates-timeline {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  position: relative;
+}
+
+.date-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: right;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(168, 85, 247, 0.15));
+  border: 1px solid rgba(147, 197, 253, 0.25);
+  border-radius: 22px;
+  padding: 24px 22px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.date-icon {
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #dbeafe;
+  background: rgba(37, 99, 235, 0.3);
+  box-shadow: 0 0 24px rgba(96, 165, 250, 0.35);
+}
+
+.date-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.date-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #fff, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+}
+
+.date-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.date-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(219, 234, 254, 0.85);
+}
+
+.date-status {
+  font-size: 13px;
+  color: #93c5fd;
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  .date-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
